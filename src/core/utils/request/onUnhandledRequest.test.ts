@@ -17,7 +17,7 @@ const fixtures = {
   • GET /api
 
 If you still wish to intercept this unhandled request, please create a request handler for it.
-Read more: https://mswjs.io/docs/getting-started/mocks`,
+Read more: https://v1.mswjs.io/docs/getting-started/mocks`,
 
   errorWithoutSuggestions: `\
 [MSW] Error: intercepted a request without a matching request handler:
@@ -25,7 +25,7 @@ Read more: https://mswjs.io/docs/getting-started/mocks`,
   • GET /api
 
 If you still wish to intercept this unhandled request, please create a request handler for it.
-Read more: https://mswjs.io/docs/getting-started/mocks`,
+Read more: https://v1.mswjs.io/docs/getting-started/mocks`,
 
   warningWithSuggestions: (suggestions: string) => `\
 [MSW] Warning: intercepted a request without a matching request handler:
@@ -37,7 +37,7 @@ Did you mean to request one of the following resources instead?
 ${suggestions}
 
 If you still wish to intercept this unhandled request, please create a request handler for it.
-Read more: https://mswjs.io/docs/getting-started/mocks`,
+Read more: https://v1.mswjs.io/docs/getting-started/mocks`,
 }
 
 beforeEach(() => {

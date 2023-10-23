@@ -8,7 +8,7 @@ test('warns on an unhandled REST API request with an absolute URL', async ({
   const consoleSpy = spyOnConsole()
   await loadExample(require.resolve('./warn.mocks.ts'))
 
-  const res = await fetch('https://mswjs.io/non-existing-page')
+  const res = await fetch('https://v1.mswjs.io/non-existing-page')
   const status = res.status()
 
   expect(status).toBe(404)
@@ -17,10 +17,10 @@ test('warns on an unhandled REST API request with an absolute URL', async ({
       expect.stringContaining(`\
 [MSW] Warning: intercepted a request without a matching request handler:
 
-  • GET https://mswjs.io/non-existing-page
+  • GET https://v1.mswjs.io/non-existing-page
 
 If you still wish to intercept this unhandled request, please create a request handler for it.
-Read more: https://mswjs.io/docs/getting-started/mocks`),
+Read more: https://v1.mswjs.io/docs/getting-started/mocks`),
     ]),
   )
 })
@@ -45,7 +45,7 @@ test('warns on an unhandled REST API request with a relative URL', async ({
   • GET /user-details
 
 If you still wish to intercept this unhandled request, please create a request handler for it.
-Read more: https://mswjs.io/docs/getting-started/mocks`),
+Read more: https://v1.mswjs.io/docs/getting-started/mocks`),
     ]),
   )
 })

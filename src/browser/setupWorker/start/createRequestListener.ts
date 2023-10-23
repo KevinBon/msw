@@ -90,7 +90,7 @@ export const createRequestListener = (
 
 %s
 
-This exception has been gracefully handled as a 500 response, however, it's strongly recommended to resolve this error, as it indicates a mistake in your code. If you wish to mock an error response, please see this guide: https://mswjs.io/docs/recipes/mocking-error-responses`,
+This exception has been gracefully handled as a 500 response, however, it's strongly recommended to resolve this error, as it indicates a mistake in your code. If you wish to mock an error response, please see this guide: https://v1.mswjs.io/docs/recipes/mocking-error-responses`,
           request.method,
           request.url,
           error.stack ?? error,

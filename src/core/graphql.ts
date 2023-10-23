@@ -75,7 +75,7 @@ const standardGraphQLHandlers = {
    *   return HttpResponse.json({ data: { user: { name: 'John' } } })
    * })
    *
-   * @see {@link https://mswjs.io/docs/api/graphql#graphqlqueryqueryname-resolver `graphql.query()` API reference}
+   * @see {@link https://v1.mswjs.io/docs/api/graphql#graphqlqueryqueryname-resolver `graphql.query()` API reference}
    */
   query: createScopedGraphQLHandler('query' as OperationTypeNode, '*'),
 
@@ -87,7 +87,7 @@ const standardGraphQLHandlers = {
    *   return HttpResponse.json({ data: { post: { id: 'abc-123 } } })
    * })
    *
-   * @see {@link https://mswjs.io/docs/api/graphql#graphqlmutationmutationname-resolver `graphql.query()` API reference}
+   * @see {@link https://v1.mswjs.io/docs/api/graphql#graphqlmutationmutationname-resolver `graphql.query()` API reference}
    *
    */
   mutation: createScopedGraphQLHandler('mutation' as OperationTypeNode, '*'),
@@ -100,7 +100,7 @@ const standardGraphQLHandlers = {
    *   return HttpResponse.json({ data: { name: 'John' } })
    * })
    *
-   * @see {@link https://mswjs.io/docs/api/graphql#graphloperationresolver `graphql.operation()` API reference}
+   * @see {@link https://v1.mswjs.io/docs/api/graphql#graphloperationresolver `graphql.operation()` API reference}
    */
   operation: createGraphQLOperationHandler('*'),
 }
@@ -120,7 +120,7 @@ function createGraphQLLink(url: Path): typeof standardGraphQLHandlers {
  * graphql.query('GetUser', resolver)
  * graphql.mutation('DeletePost', resolver)
  *
- * @see {@link https://mswjs.io/docs/api/graphql `graphql` API reference}
+ * @see {@link https://v1.mswjs.io/docs/api/graphql `graphql` API reference}
  */
 export const graphql = {
   ...standardGraphQLHandlers,
@@ -132,7 +132,7 @@ export const graphql = {
    * const github = graphql.link('https://api.github.com/graphql')
    * github.query('GetRepo', resolver)
    *
-   * @see {@link https://mswjs.io/docs/api/graphql#graphqllinkurl `graphql.link()` API reference}
+   * @see {@link https://v1.mswjs.io/docs/api/graphql#graphqllinkurl `graphql.link()` API reference}
    */
   link: createGraphQLLink,
 }

@@ -22,7 +22,7 @@ export function printStartMessage(args: PrintStartMessageArgs = {}) {
     'color:orangered;font-weight:bold;',
   )
   console.log(
-    '%cDocumentation: %chttps://mswjs.io/docs',
+    '%cDocumentation: %chttps://v1.mswjs.io/docs',
     'font-weight:bold',
     'font-weight:normal',
   )

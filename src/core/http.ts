@@ -37,7 +37,7 @@ function createHttpHandler<Method extends HttpMethods | RegExp>(
  * http.get('/user', resolver)
  * http.post('/post/:id', resolver)
  *
- * @see {@link https://mswjs.io/docs/api/http `http` API reference}
+ * @see {@link https://v1.mswjs.io/docs/api/http `http` API reference}
  */
 export const http = {
   all: createHttpHandler(/.+/),

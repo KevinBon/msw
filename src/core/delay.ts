@@ -26,7 +26,7 @@ export type DelayMode = 'real' | 'infinite'
  * await delay(1200) // delay response by 1200ms
  * await delay('infinite') // delay response infinitely
  *
- * @see {@link https://mswjs.io/docs/api/delay `delay()` API reference}
+ * @see {@link https://v1.mswjs.io/docs/api/delay `delay()` API reference}
  */
 export async function delay(
   durationOrMode?: DelayMode | number,

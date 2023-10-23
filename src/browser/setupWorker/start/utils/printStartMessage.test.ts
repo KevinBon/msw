@@ -22,7 +22,7 @@ test('prints out a default start message into console', () => {
 
   // Includes a link to the documentation.
   expect(console.log).toHaveBeenCalledWith(
-    '%cDocumentation: %chttps://mswjs.io/docs',
+    '%cDocumentation: %chttps://v1.mswjs.io/docs',
     expect.anything(),
     expect.anything(),
   )

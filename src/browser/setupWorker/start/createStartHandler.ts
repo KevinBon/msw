@@ -42,7 +42,7 @@ export const createStartHandler = (
               `Failed to locate the Service Worker registration using a custom "findWorker" predicate.
 
 Please ensure that the custom predicate properly locates the Service Worker registration at "%s".
-More details: https://mswjs.io/docs/api/setup-worker/start#findworker
+More details: https://v1.mswjs.io/docs/api/setup-worker/start#findworker
 `,
               options.serviceWorker.url,
             )
@@ -51,7 +51,7 @@ More details: https://mswjs.io/docs/api/setup-worker/start#findworker
 
 This most likely means that the worker script URL "%s" cannot resolve against the actual public hostname (%s). This may happen if your application runs behind a proxy, or has a dynamic hostname.
 
-Please consider using a custom "serviceWorker.url" option to point to the actual worker script location, or a custom "findWorker" option to resolve the Service Worker registration manually. More details: https://mswjs.io/docs/api/setup-worker/start`,
+Please consider using a custom "serviceWorker.url" option to point to the actual worker script location, or a custom "findWorker" option to resolve the Service Worker registration manually. More details: https://v1.mswjs.io/docs/api/setup-worker/start`,
               options.serviceWorker.url,
               location.host,
             )

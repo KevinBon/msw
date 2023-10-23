@@ -193,7 +193,7 @@ export async function onUnhandledRequest(
       handlerSuggestion,
       `\
 If you still wish to intercept this unhandled request, please create a request handler for it.
-Read more: https://mswjs.io/docs/getting-started/mocks\
+Read more: https://v1.mswjs.io/docs/getting-started/mocks\
 `,
     ].filter(Boolean)
     return messageTemplate.join('\n\n')

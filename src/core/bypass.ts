@@ -12,7 +12,7 @@ export type BypassRequestInput = string | URL | Request
  * fetch(bypass(new URL('/resource', 'https://example.com)))
  * fetch(bypass(new Request('https://example.com/resource')))
  *
- * @see {@link https://mswjs.io/docs/api/bypass `bypass()` API reference}
+ * @see {@link https://v1.mswjs.io/docs/api/bypass `bypass()` API reference}
  */
 export function bypass(input: BypassRequestInput, init?: RequestInit): Request {
   const request = input instanceof Request ? input : new Request(input, init)

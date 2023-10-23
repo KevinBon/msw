@@ -51,7 +51,7 @@ test.describe('GraphQL API', () => {
   • query PaymentHistory (POST /graphql)
 
 If you still wish to intercept this unhandled request, please create a request handler for it.
-Read more: https://mswjs.io/docs/getting-started/mocks`),
+Read more: https://v1.mswjs.io/docs/getting-started/mocks`),
       ]),
     )
   })
@@ -99,7 +99,7 @@ Read more: https://mswjs.io/docs/getting-started/mocks`),
 Did you mean to request "query GetUser (origin: *)" instead?
 
 If you still wish to intercept this unhandled request, please create a request handler for it.
-Read more: https://mswjs.io/docs/getting-started/mocks`),
+Read more: https://v1.mswjs.io/docs/getting-started/mocks`),
       ]),
     )
   })
@@ -147,7 +147,7 @@ Read more: https://mswjs.io/docs/getting-started/mocks`),
 Did you mean to request "mutation SubmitCheckout (origin: *)" instead?
 
 If you still wish to intercept this unhandled request, please create a request handler for it.
-Read more: https://mswjs.io/docs/getting-started/mocks`),
+Read more: https://v1.mswjs.io/docs/getting-started/mocks`),
       ]),
     )
   })
@@ -198,7 +198,7 @@ Did you mean to request one of the following resources instead?
   • mutation ActivateUser (origin: *)
 
 If you still wish to intercept this unhandled request, please create a request handler for it.
-Read more: https://mswjs.io/docs/getting-started/mocks`),
+Read more: https://v1.mswjs.io/docs/getting-started/mocks`),
       ]),
     )
   })

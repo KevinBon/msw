@@ -72,7 +72,7 @@ test('fails to return a ServiceWorkerRegistration when using a findWorker that r
 [MSW] Failed to locate the Service Worker registration using a custom "findWorker" predicate.
 
 Please ensure that the custom predicate properly locates the Service Worker registration at "/mockServiceWorker.js".
-More details: https://mswjs.io/docs/api/setup-worker/start#findworker\
+More details: https://v1.mswjs.io/docs/api/setup-worker/start#findworker\
 `)
 
   expect(activationMessage).toBeUndefined()

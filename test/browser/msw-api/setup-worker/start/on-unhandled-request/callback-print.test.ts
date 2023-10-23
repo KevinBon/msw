@@ -8,7 +8,7 @@ test('executes a default "warn" strategy in a custom callback', async ({
   const consoleSpy = spyOnConsole()
   await loadExample(require.resolve('./callback-print.mocks.ts'))
 
-  const res = await fetch('https://mswjs.io/use-warn')
+  const res = await fetch('https://v1.mswjs.io/use-warn')
   const status = res.status()
 
   // Request is performed as-is.
@@ -16,7 +16,7 @@ test('executes a default "warn" strategy in a custom callback', async ({
 
   // Custom callback executed.
   expect(consoleSpy.get('log')).toContain(
-    'Oops, unhandled GET https://mswjs.io/use-warn',
+    'Oops, unhandled GET https://v1.mswjs.io/use-warn',
   )
   expect(consoleSpy.get('error')).toBeUndefined()
 
@@ -26,10 +26,10 @@ test('executes a default "warn" strategy in a custom callback', async ({
       expect.stringContaining(`\
 [MSW] Warning: intercepted a request without a matching request handler:
 
-  • GET https://mswjs.io/use-warn
+  • GET https://v1.mswjs.io/use-warn
 
 If you still wish to intercept this unhandled request, please create a request handler for it.
-Read more: https://mswjs.io/docs/getting-started/mocks`),
+Read more: https://v1.mswjs.io/docs/getting-started/mocks`),
     ]),
   )
 })
@@ -42,7 +42,7 @@ test('executes a default "error" strategy in a custom callback', async ({
   const consoleSpy = spyOnConsole()
   await loadExample(require.resolve('./callback-print.mocks.ts'))
 
-  const res = await fetch('https://mswjs.io/use-error')
+  const res = await fetch('https://v1.mswjs.io/use-error')
   const status = res.status()
 
   // Request is performed as-is.
@@ -50,7 +50,7 @@ test('executes a default "error" strategy in a custom callback', async ({
 
   // Custom callback executed.
   expect(consoleSpy.get('log')).toContain(
-    'Oops, unhandled GET https://mswjs.io/use-error',
+    'Oops, unhandled GET https://v1.mswjs.io/use-error',
   )
   expect(consoleSpy.get('warning')).toBeUndefined()
 
@@ -60,10 +60,10 @@ test('executes a default "error" strategy in a custom callback', async ({
       expect.stringContaining(`\
 [MSW] Error: intercepted a request without a matching request handler:
 
-  • GET https://mswjs.io/use-error
+  • GET https://v1.mswjs.io/use-error
 
 If you still wish to intercept this unhandled request, please create a request handler for it.
-Read more: https://mswjs.io/docs/getting-started/mocks`),
+Read more: https://v1.mswjs.io/docs/getting-started/mocks`),
     ]),
   )
 })

@@ -77,7 +77,7 @@ Failed to register a Service Worker for scope ('${scopeUrl.href}') with script (
 
 Did you forget to run "npx msw init <PUBLIC_DIR>"?
 
-Learn more about creating the Service Worker script: https://mswjs.io/docs/cli/init`),
+Learn more about creating the Service Worker script: https://v1.mswjs.io/docs/cli/init`),
       )
     }
 

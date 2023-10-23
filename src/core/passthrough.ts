@@ -10,7 +10,7 @@
  *   return passthrough()
  * })
  *
- * @see {@link https://mswjs.io/docs/api/passthrough `passthrough()` API reference}
+ * @see {@link https://v1.mswjs.io/docs/api/passthrough `passthrough()` API reference}
  */
 export function passthrough(): Response {
   return new Response(null, {

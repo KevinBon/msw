@@ -32,7 +32,7 @@ export interface StrictResponse<BodyType extends DefaultBodyType>
  * HttpResponse.json({ name: 'John' })
  * HttpResponse.formData(form)
  *
- * @see {@link https://mswjs.io/docs/api/http-response `HttpResponse` API reference}
+ * @see {@link https://v1.mswjs.io/docs/api/http-response `HttpResponse` API reference}
  */
 export class HttpResponse extends Response {
   constructor(body?: BodyInit | null, init?: HttpResponseInit) {

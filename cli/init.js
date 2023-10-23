@@ -48,7 +48,7 @@ ${chalk.gray(swDestFilepath)}
 
 Continue by creating a mocking definition module in your application:
 
-${chalk.cyan.bold('https://mswjs.io/docs/getting-started/mocks')}
+${chalk.cyan.bold('https://v1.mswjs.io/docs/getting-started/mocks')}
 `)
 
   const packageJsonPath = path.resolve(CWD, 'package.json')

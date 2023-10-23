@@ -8,7 +8,7 @@ test('executes a given callback on an unhandled request', async ({
   const consoleSpy = spyOnConsole()
   await loadExample(require.resolve('./callback.mocks.ts'))
 
-  const res = await fetch('https://mswjs.io/non-existing-page')
+  const res = await fetch('https://v1.mswjs.io/non-existing-page')
   const status = res.status()
 
   // Request is performed as-is.
@@ -16,7 +16,7 @@ test('executes a given callback on an unhandled request', async ({
 
   // Custom callback executed.
   expect(consoleSpy.get('log')).toContain(
-    'Oops, unhandled GET https://mswjs.io/non-existing-page',
+    'Oops, unhandled GET https://v1.mswjs.io/non-existing-page',
   )
 
   // No warnings/errors produced by MSW.

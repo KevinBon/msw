@@ -8,7 +8,7 @@ test('bypasses an unhandled request', async ({
   const consoleSpy = spyOnConsole()
   await loadExample(require.resolve('./bypass.mocks.ts'))
 
-  const res = await fetch('https://mswjs.io/non-existing-page')
+  const res = await fetch('https://v1.mswjs.io/non-existing-page')
   const status = res.status()
 
   expect(consoleSpy.get('error')).toBeUndefined()
